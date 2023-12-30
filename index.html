@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/3.png" type="image/x-icon">
+    <title>login system</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sttyle.css">
+</head>
+<body>
+ <div class="basic-back" id="basicBack">
+    <div class="form">
+        <div class="form-signIn" id="form-signIn">
+            <h1>sign in</h1>
+            <div class="input-field mt-lg-4">
+                <i class="fa-solid fa-envelope"></i>
+
+                <input type="email" id="nameSignIn" placeholder="email">
+            </div>
+            
+            <div class="input-field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password"id="passwordSignIn" >
+    
+            </div>
+            <div class="buttons d-flex justify-content-center flex-column">
+                <button type="button" class="btn btn-info" id="loginSignIn">login</button>
+                <p class="mt-5">Dont have an account?</p>
+                <button type="button" class="btn btn-outline-info" id="SignUpIn">Sign up </button>
+
+            </div>
+            <div class="error" id="error">
+
+            </div>
+        </div>
+        <div class="form-signUp d-none" id="form-signUp">
+            <h1>sign up</h1>
+            <div class="input-field mt-lg-4">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="nameSignUp" placeholder="Name">
+            </div>
+            <div class="input-field">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" id="emailSignUp" placeholder="Email">
+            </div>
+            
+            
+            <div class="input-field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" id="passwordSignUp">
+    
+            </div>
+            <div class="buttons d-flex justify-content-center flex-column">
+                <button type="button" class="btn btn-info" id="signUpspare">sign up </button>
+                <p class="mt-5">You have an account?</p>
+                <button type="button" class="btn btn-outline-info" id="loginSignUp"> sign in  </button>
+
+            </div>
+        </div>
+        <div id="exist">
+
+        </div>
+        
+    </div>
+    
+    
+ </div>
+ 
+
+ </div>
+ <div class="secondback d-none"id="secondBack">
+    <div class="wellcomePage w-100 h-100 "id="welcomePage"></div>
+    <button type="button" class="btn btn-outline-danger ms-auto" id="logOut">Log out</button>
+
+    
+ </div>
+ 
+
+
+   <script src="js/bootstrap.bundle.min.js"></script> 
+   <script src="js/main.js"></script>
+</body>
+</html>
